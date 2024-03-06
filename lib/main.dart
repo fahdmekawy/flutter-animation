@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animation/widgets/animated_container_widget.dart';
 import 'package:flutter_animation/widgets/animated_default_text_style_widget.dart';
 import 'package:flutter_animation/widgets/animated_opacity_widget.dart';
+import 'package:flutter_animation/widgets/animated_position_directional_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,7 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 20),
             AnimatedOpacityWidget(),
             SizedBox(height: 20),
-            AnimatedDefaultTextStyleWidget()
+            AnimatedDefaultTextStyleWidget(),
+            SizedBox(height: 20),
+            AnimatedPositionDirectionalWidget()
           ],
         ),
       ),
