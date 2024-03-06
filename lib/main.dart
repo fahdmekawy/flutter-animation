@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation/widgets/animated_container.dart';
+import 'package:flutter_animation/widgets/animated_container_widget.dart';
+import 'package:flutter_animation/widgets/animated_default_text_style_widget.dart';
+import 'package:flutter_animation/widgets/animated_opacity_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,6 +47,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             AnimatedContainerWidget(),
+            SizedBox(height: 20),
+            AnimatedOpacityWidget(),
+            SizedBox(height: 20),
+            AnimatedDefaultTextStyleWidget()
           ],
         ),
       ),
